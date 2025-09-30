@@ -1,0 +1,315 @@
+---
+title: "Administração da Produção"
+subtitle: "Evolução histórica, fundamentos, métodos e modelos"
+author: 
+  - <br></br>Renata Oliveira
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: ["slides.css", "xaringan-themer.css"]
+    nature:
+      ratio: "16:9"
+      highlightLines: true
+      highlightStyle: solarized-light
+      countIncrementalSlides: false
+      slideNumberFormat: |
+         <div class="progress-bar-container">
+           <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+           </div>
+         </div>
+
+---
+
+```{r child = "setup.Rmd"}
+```
+
+```{r xaringan-tile-view, echo=FALSE}
+xaringanExtra::use_tile_view()
+```
+
+```{r xaringan-editable, echo=FALSE}
+xaringanExtra::use_editable(expires = 1)
+```
+
+```{r xaringanExtra-clipboard, echo=FALSE}
+htmltools::tagList(
+  xaringanExtra::use_clipboard(
+    button_text = "<i class=\"fa fa-clipboard\"></i>",
+    success_text = "<i class=\"fa fa-check\" style=\"color: #90BE6D\"></i>",
+    error_text = "<i class=\"fa fa-times-circle\" style=\"color: #F94144\"></i>"
+  ),
+  rmarkdown::html_dependency_font_awesome()
+)
+```
+
+```{r xaringan-fit-screen, echo=FALSE}
+xaringanExtra::use_fit_screen()
+```
+
+```{r xaringan-extra-styles, echo=FALSE}
+xaringanExtra::use_extra_styles(
+  hover_code_line = TRUE,         #<<
+  mute_unhighlighted_code = TRUE  #<<
+)
+```
+
+```{r xaringan-scribble, echo=FALSE}
+xaringanExtra::use_scribble()
+```
+
+
+class: middle, center, inverse
+
+
+# GESTÃO + PRODUÇÃO
+
+
+.large[
+Do que se trata?   
+Para que serve?   
+O precisamos saber?
+]
+
+---
+# Atividade preliminar
+
+Defina com suas próprias palavras o que é: **Gestão da produção**
+
+Coloque sua definição no 
+
+
+
+---
+# Aeroporto de Congonhas
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="70%"}
+knitr::include_graphics("img/congonhas.png")
+```
+
+---
+
+
+# Gestão
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="50%"}
+knitr::include_graphics("img/12.webp")
+```
+
+---
+
+# Produção 
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="80%"}
+knitr::include_graphics("img/6.png")
+```
+
+---
+
+# Bens x Serviços
+
+.pull-left[
+.large[
+## Bens
+- Tangíveis
+- Podem ser armazenados
+- Pouca ou nenhuma interação entre consumidor e fornecedor
+]]
+
+.pull-right[
+.large[
+## Serviços
+- Intangíveis
+- Não podem ser armazenados
+- Simultaneidade de produção e consumo
+]]
+
+---
+
+# Gestão da produção e operações
+
+.larger[
+A gestão de operações é responsável pelo **gerenciamento estratégico** dos **recursos**, sua **interação** e os processos que **produzem** e **entregam bens e serviços** visando atender às **necessidades ou desejos** dos consumidores considerando **qualidade, tempo, espaço e custo aos clientes**. 
+
+Alinhamento com objetivos organizacionais: **eficiência no uso de recursos** 
+]
+
+---
+
+# Contextualização - organizações
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="80%"}
+knitr::include_graphics("img/4.png")
+```
+
+---
+
+# Contextualização - organizações
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="80%"}
+knitr::include_graphics("img/2.png")
+```
+
+---
+# Contextualização - organizações
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="80%"}
+knitr::include_graphics("img/8.png")
+```
+
+
+---
+
+# Evolução histórica
+
+## **Produção Artesanal**   
+Forma de produção organizada através dos artesãos que estabeleciam prazos de entrega e prioridades, atendendo especificações preestabelecidas e fixando preços para suas encomendas. Posteriormente a produção aumentou o número de encomendas, passando contratar ajudantes que inicialmente faziam trabalhos de menor responsabilidade e assim que aprendiam o ofício, se tornavam novos artesãos.
+
+---
+
+# Evolução histórica
+
+## **Revolução Industrial**   
+A descoberta da máquina a vapor em **1764** por James Watt (decadência da produção artesanal), inicia-se o processo de substituição da força humana pela força da máquina. Os artesãos se agruparam para formar as primeiras fábricas. Essa revolução no modo de fabricação trouxe: 
+
+.pull-left[
+- Padronização dos produtos;   
+- Padronização dos processos de fabricação;    
+- Treinamento e habilitação da MDO; 
+- Criação e desenvolvimento dos quadros gerenciais e de supervisão; ]  
+
+
+
+.pull-right[
+- Desenvolvimento de técnicas de planejamento e controle da produção;   
+- Desenvolvimento de técnicas de planejamento e controle financeiro;   
+- Desenvolvimento de técnicas de vendas.
+]
+
+---
+
+# Evolução histórica
+
+## **Taylorismo** (Administração Científica)
+
+Surgiu no **fim do século XIX** nos Estados Unidos através de Taylor a sistematização do conceito de produtividade, isto é, a procura incessante por melhores métodos de trabalho e processos de produção, com o objetivo de se obter melhoria da produtividade com o menor custo possível.
+
+---
+
+# Evolução histórica
+
+
+## **Linha de Montagem**   
+Henry Ford **(1910)** cria a produção em série, revolucionando os métodos e processos produtivos. Surge o conceito de produção em massa, caracterizada por grandes volumes de produtos padronizados. A busca da melhoria da produtividade por meio de novas técnicas originou o termo engenharia industrial. Novos conceitos foram introduzidos:
+
+.pull-left[
+- Linha de montagem; 
+- Posto de trabalho; 
+- Estoques intermediários; 
+- Monotonia do trabalho; 
+- Arranjo físico;]
+
+.pull-right[
+- Balanceamento de linha; 
+- Produtos em processo; 
+- Motivação; 
+- Sindicatos; 
+- Manutenção preventiva.
+]
+
+---
+
+# Evolução histórica
+
+## **Modelo Pós-fordista**
+
+**Modelo Toyota (Produção Enxuta)**: A partir de **meados da década de 60**, surgiram novas técnicas produtivas, que vieram a caracterizar a denominada produção enxuta que introduziu, os conceitos:
+
+.pull-left[
+- Just-in-time;
+- Engenharia simultânea; 
+- Tecnologia de grupo; 
+- Consórcio modular; 
+]
+
+.pull-right[
+- Células de produção; 
+- Desdobramento da função qualidade; 
+- Comakership, Sistemas flexíveis de manufatura; 
+- Manufatura integrada por computador; 
+- Benchmarking.]
+
+---
+
+# Evolução histórica
+```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="70%"}
+knitr::include_graphics("img/13.png")
+```
+
+---
+class: inverse
+
+# Evolução histórica
+
+.center[
+.huge[
+E HOJE???????
+]]
+
+---
+
+# Desafios
+```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="50%"}
+knitr::include_graphics("img/3.png")
+```
+
+---
+
+# Ações 
+
+.large[
+- O **que** produzir e comprar?
+- **Quanto** produzir e comprar?
+- **Quando** produzir e comprar?
+- Com que **recurso** produzir?
+- **Como levar** produtos ou serviços para o consumidor?
+]
+
+---
+
+# Níveis de planejamento
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="100%"}
+knitr::include_graphics("img/11.png")
+```
+
+---
+
+# Níveis de planejamento
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="90%"}
+knitr::include_graphics("img/15.png")
+```
+
+---
+
+# Planejamento, programação e controle da produção
+
+.larger[
+- Planejar as necessidades futuras de capacidade produtiva
+- Programar atividades de produção 
+- Planejar níveis adequados de estoques
+- Planejar os materiais a serem comprados
+- Planejar o acesso aos bens e serviços
+- Acompanhar a situação de recursos e ordens
+- Ser capaz de reagir de maneira eficaz
+- Arranjos de prazos entre consumidor e empresas]
+
+
+
+
+---
+class: center, middle
+
+.huge[
+**DÚVIDAS?**
+]
